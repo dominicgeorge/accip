@@ -12,7 +12,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '.
 from config import *
 
 class DataGenerator:
-    def __init__(self, host=os.getenv("DB_HOST", db_host), port=os.getenv("DB_PORT", db_port), 
+    def __init__(self, host=os.getenv("db_host", db_host), port=os.getenv("DB_PORT", db_port), 
                  db=os.getenv("DB_NAME", db_name), user=os.getenv("DB_USER", db_user), 
                  password=os.getenv("DB_PASS", db_pass)):
         """Initialize the DataGenerator with database connection and helper data."""
